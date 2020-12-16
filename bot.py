@@ -131,7 +131,7 @@ def main():
                           port=PORT,
                           url_path=TOKEN)
     updater.bot.set_webhook(
-        "https://ritresultbot.herokuapp.com/" + TOKEN)
+        "https://<YOUR APP NAME>.herokuapp.com/" + TOKEN)
     updater.idle()
 
 
