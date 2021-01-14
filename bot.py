@@ -60,7 +60,7 @@ def result(usn):
 
 
 def gradecard(usn) -> str:
-    if(usn.startswith("1ms") and len(usn) == 10):
+    if(usn.startswith("1ms") or usn.startswith("1MS") and len(usn) == 10):
         usn = usn
         gc = MSRIT_RES(usn)
         url = gc.markscardpdf()
